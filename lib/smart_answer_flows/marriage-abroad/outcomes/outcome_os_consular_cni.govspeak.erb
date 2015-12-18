@@ -252,6 +252,8 @@
     - equivalent documents for your partner
 
 
+  <% elsif resident_of == 'ceremony_country' && ceremony_country == 'bulgaria' %>
+    <%= render partial: 'required_supporting_documents_bulgaria.govspeak.erb' %>
   <% elsif resident_of != 'uk' && ceremony_country == 'philippines' %>
     <%= render partial: 'required_supporting_documents_philippines.govspeak.erb' %>
   <% elsif resident_of != 'uk' && ceremony_country == 'macao' %>
