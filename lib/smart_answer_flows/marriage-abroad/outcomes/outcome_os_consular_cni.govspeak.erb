@@ -521,6 +521,10 @@
     <% elsif ceremony_country == 'kuwait' %>
       You can pay by cash or credit card (except American Express), but not by personal cheque.
 
+    <% elsif ceremony_country == 'bulgaria' %>
+      <%= render partial: 'pay_by_debit_or_credit_card_no_cheque.govspeak.erb' -%>
+      You can only pay by cash in exceptional circumstances.
+
     <% elsif %w(cote-d-ivoire burundi).exclude?(ceremony_country) %>
       <%= render partial: 'pay_by_cash_or_credit_card_no_cheque.govspeak.erb' %>
     <% end %>
