@@ -231,7 +231,11 @@
 
         %You can’t book an appointment to get advice at the embassy in person.%
 
+      <% elsif calculator.ceremony_country == 'el-salvador' %>
+        Email <George.Chippendale-honcon@fconet.fco.gov.uk> to make an appointment at the embassy in San Salvador.
+
       <% else %>
+
         <%= render partial: 'contact_method.govspeak.erb',
                    locals: {
                      calculator: calculator,
