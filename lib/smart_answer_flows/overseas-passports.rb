@@ -22,10 +22,6 @@ module SmartAnswer
           calculator.overseas_passports_embassies(response)
         end
 
-        calculate :send_colour_photocopy_bulletpoint do
-          nil
-        end
-
         permitted_next_nodes = [
           :cannot_apply,
           :which_opt?,
