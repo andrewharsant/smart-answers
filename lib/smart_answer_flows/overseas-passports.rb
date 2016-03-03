@@ -18,9 +18,6 @@ module SmartAnswer
           raise InvalidResponse unless calculator.world_location(response)
         end
 
-        calculate :birth_location do
-          nil
-        end
         calculate :embassy_address do
           nil
         end
@@ -164,8 +161,6 @@ module SmartAnswer
 
       # Q4
       country_select :country_of_birth?, include_uk: true, exclude_countries: Calculators::OverseasPassportsCalculator::EXCLUDE_COUNTRIES do
-        save_input_as :birth_location
-
         calculate :application_group do |response|
           data_query.find_passport_data(response)['group']
         end
@@ -182,7 +177,9 @@ module SmartAnswer
           :ips_application_result_online,
           :ips_application_result
         ]
-        next_node(permitted: permitted_next_nodes) do
+        next_node(permitted: permitted_next_nodes) do |response|
+          calculator.birth_location = response
+
           if is_ips_application
             if ips_result_type == :ips_application_result_online
               :ips_application_result_online
@@ -194,20 +191,12 @@ module SmartAnswer
       end
 
       ## Online IPS Application Result
-      outcome :ips_application_result_online do
-        precalculate :birth_location do
-          birth_location
-        end
-      end
+      outcome :ips_application_result_online
 
       ## IPS Application Result
       outcome :ips_application_result do
         precalculate :data_query do
           data_query
-        end
-
-        precalculate :birth_location do
-          birth_location
         end
       end
 
