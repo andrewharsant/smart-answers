@@ -1,7 +1,7 @@
 ---
-lib/smart_answer_flows/marriage-abroad.rb: 4bfc3759306b93273cd92f1c66a64d24
-test/data/marriage-abroad-questions-and-responses.yml: 85feca37588fbe9da8d56b382e6cdc23
-test/data/marriage-abroad-responses-and-expected-results.yml: e5f779e927f25f4b67316adb9dd54a57
+lib/smart_answer_flows/marriage-abroad.rb: 8a2dcead954aca97bbfa280d1cbaed07
+test/data/marriage-abroad-questions-and-responses.yml: 8e27eefe46913c262f78509970da20e6
+test/data/marriage-abroad-responses-and-expected-results.yml: 6dfa7380f02b368feae5dc1e5456cae1
 lib/smart_answer_flows/marriage-abroad/marriage_abroad.govspeak.erb: b4d0cfc1c7c4776d968c9b5b6df85027
 lib/smart_answer_flows/marriage-abroad/outcomes/_affirmation_os_translation_in_local_language_text.govspeak.erb: 4ac964ce5e41e3efaf0f43d11c71b2b7
 lib/smart_answer_flows/marriage-abroad/outcomes/_appointment_documents_in_vietnam.govspeak.erb: 6390e13560110a71b8a3c0dc018ff4cf
@@ -25,7 +25,7 @@ lib/smart_answer_flows/marriage-abroad/outcomes/_contact_laadoul.govspeak.erb: 1
 lib/smart_answer_flows/marriage-abroad/outcomes/_contact_local_authorities.govspeak.erb: f8d276a3b65ce8160406b5c341c7d783
 lib/smart_answer_flows/marriage-abroad/outcomes/_contact_local_authorities_in_country_cp.govspeak.erb: c00842169aab58b455815258621a32a7
 lib/smart_answer_flows/marriage-abroad/outcomes/_contact_local_authorities_in_country_marriage.govspeak.erb: 033f28531a65164876ce6d6976de0ec1
-lib/smart_answer_flows/marriage-abroad/outcomes/_contact_method.govspeak.erb: 78b2e6b331f9da234638c3576c06bbe7
+lib/smart_answer_flows/marriage-abroad/outcomes/_contact_method.govspeak.erb: 4e944a93564568677d422706c1ca07d7
 lib/smart_answer_flows/marriage-abroad/outcomes/_contact_nearest_embassy_of_country.govspeak.erb: e12d9c675e88c6efb49d9fcf54cb4570
 lib/smart_answer_flows/marriage-abroad/outcomes/_contact_to_make_appointment.govspeak.erb: a7e4a184e974b3989a697578277b3b7a
 lib/smart_answer_flows/marriage-abroad/outcomes/_convert_cc_to_ss_marriage.govspeak.erb: 38e1be8bb7bdd80ef0c4c6c3af8f7f04
@@ -101,6 +101,7 @@ lib/smart_answer_flows/marriage-abroad/outcomes/outcome_cp_consular.govspeak.erb
 lib/smart_answer_flows/marriage-abroad/outcomes/outcome_cp_france_pacs.govspeak.erb: 71ed894fbccf1cd2249915ceca553bf4
 lib/smart_answer_flows/marriage-abroad/outcomes/outcome_cp_no_cni.govspeak.erb: d016ac758c0f76f20f0fc2de524b7065
 lib/smart_answer_flows/marriage-abroad/outcomes/outcome_cp_or_equivalent.govspeak.erb: e4d51f5d3dadf2402e08dabfe8717776
+lib/smart_answer_flows/marriage-abroad/outcomes/outcome_dominican_republic.govspeak.erb: bead9bc42896685e226ad500575bbd11
 lib/smart_answer_flows/marriage-abroad/outcomes/outcome_ireland.govspeak.erb: 5acba40ca6d8af05497706d6a151b605
 lib/smart_answer_flows/marriage-abroad/outcomes/outcome_marriage_via_local_authorities.govspeak.erb: 3bae8886bb9b619aa509b7e6fc3dd178
 lib/smart_answer_flows/marriage-abroad/outcomes/outcome_monaco.govspeak.erb: ed16ccde85e5b0062e85addad4c21d44
