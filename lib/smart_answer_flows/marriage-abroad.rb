@@ -139,7 +139,8 @@ module SmartAnswer
           :outcome_ss_marriage,
           :outcome_ss_marriage_malta,
           :outcome_ss_marriage_not_possible,
-          :outcome_switzerland
+          :outcome_switzerland,
+          :outcome_dominican_republic
         ]
         next_node(permitted: permitted_next_nodes) do |response|
           calculator.sex_of_your_partner = response
@@ -156,7 +157,7 @@ module SmartAnswer
           elsif calculator.ceremony_country == "spain"
             :outcome_spain
           elsif calculator.ceremony_country == 'dominican-republic'
-            :outcome_ss_marriage
+            :outcome_dominican_republic
           elsif calculator.partner_is_opposite_sex?
             if calculator.ceremony_country == 'hong-kong'
               :outcome_os_hong_kong
@@ -420,6 +421,8 @@ module SmartAnswer
       outcome :outcome_ss_affirmation
 
       outcome :outcome_os_marriage_impossible_no_laos_locals
+
+      outcome :outcome_dominican_republic
     end
   end
 end
