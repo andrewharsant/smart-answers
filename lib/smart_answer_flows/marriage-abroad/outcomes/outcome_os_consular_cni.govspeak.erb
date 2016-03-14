@@ -213,6 +213,16 @@
 
         %You can’t book an appointment to get advice at the embassy in person.%
 
+      <% elsif calculator.ceremony_country == 'moldova' %>
+        Contact the embassy or consulate to make an appointment.
+        
+        $A
+        British Embassy Chisinau
+        18 Nicolae Iorga Str.
+        Chisinau
+        MD-2012
+        Moldova
+        $A
       <% else %>
         <%= render partial: 'contact_method.govspeak.erb',
                    locals: { calculator: calculator } %>
